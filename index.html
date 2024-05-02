@@ -14,8 +14,8 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="./styles.css">
-	<script type="text/javascript" src="./utils.js"></script>
+	<link rel="stylesheet" href="./css/styles.css">
+	<script type="text/javascript" src="./utils/utils.js"></script>
 
 </head>
 
@@ -27,10 +27,10 @@
 
 				<!-- Menu principal -->
 				<div class="hidden md:flex items-center space-x-1">
-					<a href="#about" class="py-5 pr-10 hover:text-white">About Me</a>
-					<a href="#portfolio" class="py-5 px-10 hover:text-white">Portfolio</a>
-					<a href="#resume" class="py-5 px-10 hover:text-white">Resume</a>
-					<a href="#contact" class="py-5 px-10 hover:text-white">Contact Me</a>
+					<a href="#about" class="py-5 pr-10 hover:text-amber-800">About Me</a>
+					<a href="#portfolio" class="py-5 px-10 hover:text-amber-800">Portfolio</a>
+					<a href="#resume" class="py-5 px-10 hover:text-amber-800">Resume</a>
+					<a href="#contact" class="py-5 px-10 hover:text-amber-800">Contact Me</a>
 				</div>
 
 				<!-- Menu burger -->
@@ -44,7 +44,7 @@
 					</button>
 					<div
 						class="text-center bg-zinc-800 hover:bg-zinc-500 box-border h-10 w-32 text-white py-2 px-4 rounded-3xl">
-						HIRE ME
+						<a href="https://www.linkedin.com/in/simon-descombes/" target="_blank">HIRE ME</a>
 					</div>
 				</div>
 
@@ -60,6 +60,12 @@
 		</div>
 	</nav>
 	<div class="container max-w-6xl mx-auto px-11">
+		<!-- Picture -->
+		<!-- <div class="flex justify-end ">
+			<img class="rounded-lg h-64 relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+				src="./assets/Photo.jpg" alt="Photo Simon Descombes">
+		</div> -->
+
 		<!-- Section About Me -->
 		<section id="about" class="mt-52">
 			<div class="text-3xl">Simon</div>
@@ -113,8 +119,8 @@
 		<!-- Section Resume -->
 		<section id="resume" class="mt-52">
 			<h2 class="text-2xl text-center">/ CV.</h2>
-			<a href="" target="_blank"
-				class="underline text-gray-500 hover:text-gray-950 block text-center mt-3">Download my resume.</a>
+			<a href="./assets/CV Simon Descombes.pdf" target="_blank"
+				class="underline text-gray-500 hover:text-amber-800 block text-center mt-3">Download my resume.</a>
 		</section>
 
 		<!-- Section Contact Me -->
@@ -159,9 +165,9 @@
 
 
 	<footer class="container max-w-6xl mx-auto px-11 mt-52 rounded-lg  m-4">
-		<div class="m-4 p-4 md:flex md:items-center md:justify-between">
-			<span id="footer" class="text-sm text-slate-900 sm:text-center"> 
-				Fully Handmade by Simon Descombes. (v1)
+		<div class="m-4 p-4 text-center">
+			<span id="footer" class="text-sm text-slate-900 sm:text-center">
+				- Simon Descombes.
 			</span>
 		</div>
 	</footer>

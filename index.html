@@ -4,7 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio CV</title>
+	<link rel="icon" href="./assets/favicon.svg">
+	<title>Portfolio Simon Descombes</title>
 	<script src="https://cdn.tailwindcss.com"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.js"
 		integrity="sha512-6m6AtgVSg7JzStQBuIpqoVuGPVSAK5Sp/ti6ySu6AjRDa1pX8mIl1TwP9QmKXU+4Mhq/73SzOk6mbNvyj9MPzQ=="
@@ -17,6 +18,13 @@
 	<link rel="stylesheet" href="./css/styles.css">
 	<script type="text/javascript" src="./utils/utils.js"></script>
 
+	<!-- Lottie -->
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+	<!-- Cursor -->
+	<link rel="stylesheet" href="./utils/custom_cursor/cursor.css" />
+	<script src="./utils/custom_cursor/cursor.js"
+		gradient="#3257BF, #3364C4, #3472C9, #3680CE, #3785D5, #3793C9, #36A1BE, #35AEB3, #34BBA8, #2CBE8A"></script>
 </head>
 
 
@@ -59,15 +67,21 @@
 			<a href="#contact" class="block py-3 px-11 text-sm hover:bg-gray-300">Contact Me</a>
 		</div>
 	</nav>
+
+
 	<div class="container max-w-6xl mx-auto px-11">
 		<!-- Picture -->
-		<!-- <div class="flex justify-end ">
-			<img class="rounded-lg h-64 relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
-				src="./assets/Photo.jpg" alt="Photo Simon Descombes">
-		</div> -->
+		<div class="flex justify-end ">
+			<lottie-player src="https://lottie.host/4cabbdd0-d312-45cd-8669-b6cc7601c699/vrLUnsqfuu.json"
+				background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+			<!-- <img class="rounded-lg h-64 relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+				src="./assets/Photo.jpg" alt="Photo Simon Descombes">  -->
+		</div>
+
+
 
 		<!-- Section About Me -->
-		<section id="about" class="mt-52">
+		<section id="about" class="mt-10">
 			<div class="text-3xl">Simon</div>
 			<div class="text-3xl">DESCOMBES.</div>
 			<p class="mt-12">Riche d'une carrière réussie dans le support technique et la formation
@@ -117,10 +131,13 @@
 		</section>
 
 		<!-- Section Resume -->
-		<section id="resume" class="mt-52">
+		<section id="resume" class="mt-52 ">
 			<h2 class="text-2xl text-center">/ CV.</h2>
-			<a href="./assets/CV Simon Descombes.pdf" target="_blank"
-				class="underline text-gray-500 hover:text-amber-800 block text-center mt-3">Download my resume.</a>
+			<div
+				class="mt-5 mx-auto text-center bg-orange-800 hover:bg-orange-500 box-border h-10 w-60 text-white py-2 px-4 rounded-3xl ">
+				<a href="./assets/CV Simon Descombes.pdf"target="_blank">Download my resume.</a>
+			</div>
+
 		</section>
 
 		<!-- Section Contact Me -->
